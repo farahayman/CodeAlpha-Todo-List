@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="pageStyle.css">
+    </head>
+    <body>
+        <section>
+           
+       <div class="container">
+       <div class ="todoContainer">
+            <h2>
+                To-Do List <img src="list (1).png"/>
+            </h2>  
+            <div class ='inputRow'>
+                <input type="text" id ='task-box' placeholder="Type your Task ">
+                <button id="addbtn" onclick="addTask()">Add</button>
+            </div>  
+            <div>
+                <ul id="tasks-list">
+                        
+                </ul>
+
+            </div>   
+        </div>
+       </div>
+    </section>
+       <footer class="footer">
+        <div class="footer-content">
+          <div >
+            <p >©All rights reserved.</p>
+          </div>
+          <div >
+              <p >designed by Farah Ayman.</p>
+            </div>
+            <div>
+                <p id="current_date">
+                    <script>
+                        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                        document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
+                    </script>
+                </p>
+            </div>
+         
+      </div>
+    </footer>
+       <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+       <script src="mypage.js" ></script>
+    </body>
+</html>
